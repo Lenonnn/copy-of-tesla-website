@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section.main {
+    /* Cria uma altura minima de 100% - Se ultrapassar cria scroll*/
+    width: 100%; 
+    min-height: 100%; 
+    /* URL da Imagem de fundo */
+    background-image: url('background3.jpg');
+    /* Alinha no centro */
+    background-position: center;
+    /* Cobrir tudo na tela - responsivo*/
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    /* Pega todo o conteudo do header e distribui de forma igual */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo img {
+    width: 230PX;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0s;
+    padding: 5px 7px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 7px ;
+}
+
+.title {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.title h2{
+    color: rgb(143, 142, 142);
+    font-size: 32px;
+    letter-spacing: 1.2px;
+}
+
+.title p{
+    color: white;
+    margin-top: 20px;
+}
+
+.title p a {
+    color: #ccc;
+}
+
+.btn {
+    /*margin-top: 110px;*/
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    /* Ambos os alinhamentos funcionando */
+    /* display: flex;
+    justify-content: center; */
+    left: 0;
+    text-align: center;
+}
+
+.btn a{
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 0 40px;
+    background-color: rgb(87, 85, 85);
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
